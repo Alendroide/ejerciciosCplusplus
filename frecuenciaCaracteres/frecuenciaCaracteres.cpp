@@ -8,6 +8,9 @@ void frecuenciaCaracteres(string texto){
     int sumaPrevia = 0;
     int sumaPosterior;
     for(int i = 0; i <= texto.length() - 1 ; i++){
+        if(texto[i] == ' '){
+            continue;
+        }
         sumaPosterior = 0;
         for(int j = 0; j <= texto.length() - 1 ; j++){
             if(texto[i] == texto[j]){
