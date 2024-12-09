@@ -13,8 +13,9 @@ void matrizEspejo(){
 
     int matriz[altura][ancho];
     int temp;
-    int column = 1;
+    int column;
     for(int i = 0 ; i < altura ; i++){
+        column = 1;
         for(int j = ancho - 1 ; j >= 0 ; j--){
             cout << "Ingrese el valor de la fila [" << i+1 << "] columna [" << column << "]";
             cin >> temp;
